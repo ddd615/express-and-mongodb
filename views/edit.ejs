@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>修改页面</title>
+
+</head>
+<body>
+<form action="/save_edit" method="post">
+    <input type="hidden" name="id" value="<%=news.id%>">
+    标题：<input type="text" name="title" value="<%=news.title%>">
+    作者：<input type="text" name="author" value="<%=news.author%>">
+    来源：<input type="text" name="from" value="<%=news.from%>">
+    内容：<textarea name="content" id="" cols="30" rows="10"><%=news.content%></textarea>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
